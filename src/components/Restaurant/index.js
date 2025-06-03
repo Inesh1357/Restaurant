@@ -138,7 +138,7 @@ class Restaurant extends Component {
     const {tabDetails, tabId, categoryList} = this.state
     return (
       <>
-        <ul className="tab-list">
+        <ul className='tab-list'>
           {tabDetails.map(eachItem => (
             <TabItem
               tab={eachItem}
@@ -148,7 +148,7 @@ class Restaurant extends Component {
             />
           ))}
         </ul>
-        <ul className="tab-item">
+        <ul className='tab-item'>
           {categoryList.map(eachItem => (
             <CategoryItem
               categoryItem={eachItem}
@@ -165,13 +165,13 @@ class Restaurant extends Component {
   renderFailureView = () => {}
 
   renderIsLoading = () => (
-    <div data-testid="loader" className="loader">
+    <div data-testid='loader' className='loader'>
       <Loader
-        type="ThreeDots"
-        color="#4f46e5"
+        type='ThreeDots'
+        color='#4f46e5'
         height={80}
         width={80}
-        className="kkk"
+        className='kkk'
       />
     </div>
   )
